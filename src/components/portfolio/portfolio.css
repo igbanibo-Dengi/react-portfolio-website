@@ -1,0 +1,123 @@
+#portfolio {
+  margin-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.projects-container {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.article-wrapper {
+  -webkit-transition: 0.15s all ease-in-out;
+  transition: 400ms all ease-in-out;
+  border-radius: 10px;
+  padding: 5px;
+  border: 4px solid transparent;
+  cursor: default;
+  background-color: var(--color-bg-variant);
+}
+
+.article-wrapper:hover {
+  -webkit-box-shadow: 10px 10px 0 #4e84ff, 20px 20px 0 #4444bd;
+  box-shadow: 10px 10px 0 #4e84ff, 20px 20px 0 #4444bd;
+  border-color: #0578c5;
+  -webkit-transform: translate(-20px, -20px);
+  -ms-transform: translate(-20px, -20px);
+  transform: translate(-20px, -20px);
+}
+
+.article-wrapper:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.types {
+  gap: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: flex-start;
+}
+
+
+.article-wrapper:hover .project-hover {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background-color: #a6c2f0;
+}
+
+.project-info {
+  padding-top: 10px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-title {
+  font-size: 1.7rem;
+  margin: 0;
+  color: white;
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.flex-pr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container-project {
+  width: 100%;
+  height: 170px;
+  background: gray;
+}
+
+
+
+
+/* =================== MEDIA QUERIES(MEDUIM DEVICES)============ */
+
+@media screen and (max-width: 1024px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .article-wrapper:hover {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: none;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+
+
+/* =================== MEDIA QUERIES(SMALL DEVICES)============ */
+
+@media screen and (max-width: 690px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}

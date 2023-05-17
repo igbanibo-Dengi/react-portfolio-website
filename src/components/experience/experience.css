@@ -1,0 +1,33 @@
+
+.skills-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.skills-icon{
+  height: 60px;
+  width: auto;
+  color: var(--color-primary);
+}
+
+.skills-icon:hover{
+  color: var(--color-white);
+}
+
+/* =================== MEDIA QUERIES(MEDUIM DEVICES)============ */
+
+@media screen and (max-width: 1024px) {
+    .skills-container{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 1rem;
+      justify-items: center;
+    }
+}
+
+/* =================== MEDIA QUERIES(SMALL DEVICES)============ */
+
+@media screen and (max-width: 600px) {
+
+}

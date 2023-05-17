@@ -1,0 +1,127 @@
+
+
+.container.contact-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 58%;
+  gap: 10%;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+
+.contact-cards{
+  width: fit-content;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-option{
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  width: fit-content;
+}
+
+
+.contact-option:hover{
+  background: transparent;
+  border-color: var(--color-primary-variant);
+}
+
+.contact-icon{
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-option a{
+  margin-top: 0.7rem;
+  display: inline-block;
+}
+.contact-option a:hover{
+  transform: scale(1.2);
+}
+
+.contact-option h5{
+  font-weight: 300  ;
+  color: var(--color-light);
+}
+
+.contact-socials{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.contact-social-icons {
+  height: 30px;
+  width: auto;
+  color: white;
+  transition: var(--transition);
+}
+.contact-social-icons:hover{
+  transform: scale(1.3);
+}
+
+.contact-cv{
+  margin-top: 0;
+}
+
+/* ==============FORM============ */
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-primary-variant);
+  resize: none;
+  color: var(--color-white);
+}
+
+
+
+
+/* =================== MEDIA QUERIES(MEDUIM DEVICES)============ */
+
+@media screen and (max-width: 1024px) {
+  .container.contact-container{
+    grid-template-columns: 1fr;
+  }
+  .contact-cards{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-socials{
+    max-width: 400px;
+    gap: 2rem;
+  }
+
+  .contact-option{
+    width: 50%;
+    margin: auto 0;
+  }
+}
+
+
+/* =================== MEDIA QUERIES(SMALL DEVICES)============ */
+
+@media screen and (max-width: 600px) {
+  .contact-option{
+    width: fit-content;
+    margin: auto 0;
+  }
+}
