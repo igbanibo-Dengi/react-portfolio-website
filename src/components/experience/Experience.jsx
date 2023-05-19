@@ -13,7 +13,7 @@ import {FaVuejs} from 'react-icons/fa'
 const Experience = () => {
   return (
     <section id='experience'>
-      <h5>What i Have TO Offer</h5>
+      <h5>What I Have To Offer</h5>
       <h2>My Skills</h2>
 
       <div className="container skills-container">
