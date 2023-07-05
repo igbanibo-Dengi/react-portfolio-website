@@ -6,6 +6,7 @@ import IMG3 from "../../assets/project3.png";
 import IMG4 from "../../assets/project4.png";
 import IMG5 from "../../assets/project5.png";
 import IMG6 from "../../assets/project6.png";
+import DippsImg from "../../assets/dipps.png";
 
 import { ImHtmlFive2 } from "react-icons/im";
 import { RiCss3Fill } from "react-icons/ri";
@@ -15,7 +16,7 @@ import { FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { TbBrandBootstrap } from "react-icons/tb";
 import { TbBrandTypescript } from "react-icons/tb";
-import { FaVuejs } from "react-icons/fa";
+import { TbBrandFramerMotion } from "react-icons/tb";
 
 const data = [
   {
@@ -32,6 +33,19 @@ const data = [
   },
   {
     id: 2,
+    Image: DippsImg,
+    title: "Dipps Beautifyers",
+    github: "https://github.com/igbanibo-Dengi/dipps-",
+    demo: "https://dipps.netlify.app/",
+    icons: [
+      <FaReact key="react" className="project-icon" />,
+      <SiTailwindcss key="tailwind" className="project-icon" />,
+      <ImHtmlFive2 key="html" className="project-icon" />,
+      <TbBrandFramerMotion key="framer" className="project-icon" />,
+    ],
+  },
+  {
+    id: 3,
     Image: IMG1,
     title: "Nexus Gaming",
     github: "https://github.com/igbanibo-Dengi/nexus-gaming",
@@ -45,7 +59,7 @@ const data = [
   },
 
   {
-    id: 3,
+    id: 4,
     Image: IMG2,
     title: "ShortLinked",
     github: "https://github.com/igbanibo-Dengi/Shortly",
@@ -57,7 +71,7 @@ const data = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     Image: IMG3,
     title: "Home Lander BnB",
     github: "https://github.com/igbanibo-Dengi/Home-lander-BNB",
@@ -69,7 +83,7 @@ const data = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     Image: IMG4,
     title: "Manage landing Page",
     github: "https://github.com/igbanibo-Dengi/manager",
@@ -80,7 +94,7 @@ const data = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     Image: IMG5,
     title: "Counter App",
     github: "https://github.com/igbanibo-Dengi/counter-web-app",
