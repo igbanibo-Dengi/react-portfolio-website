@@ -44,7 +44,6 @@
   place-content: flex-start;
 }
 
-
 .article-wrapper:hover .project-hover {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -62,7 +61,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 .project-title {
@@ -92,8 +91,19 @@
   background: gray;
 }
 
+.icons-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-around;
+  width: fit-content;
+}
 
-
+.project-icon {
+  height: 30px;
+  width: auto;
+  color: var(--color-white);
+}
 
 /* =================== MEDIA QUERIES(MEDUIM DEVICES)============ */
 
@@ -111,8 +121,6 @@
     transform: none;
   }
 }
-
-
 
 /* =================== MEDIA QUERIES(SMALL DEVICES)============ */
 
